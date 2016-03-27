@@ -2,11 +2,11 @@ import json
 from urllib2 import urlopen
 
 
-fp = open("iiitd_group_members.txt")
+fp = open("MEA Collage.txt")
 data = json.loads(fp.read())
 fp.close()
 
-user_photos = {} # id -> [User's Name, Photo URL]
+user_photos = {245163735559342} # id -> [User's Name, Photo URL]
 
 for user in data["data"]:
     print user
